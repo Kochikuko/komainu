@@ -47,9 +47,9 @@
 
 .grid-5 {
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: max-content max-content;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: .5em 0em;
+    gap: 0em 3em;
     grid-auto-flow: row;
     grid-template-areas:
         "bk-1 bk-2"
@@ -57,6 +57,61 @@
         "bk-5 bk-6"
         "bk-7 bk-8";
 }
+
+@media only screen and (max-width: 1024px) {}
+
+
+@media only screen and (max-width: 572px) {
+    .grid-5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content min-content min-content;
+        gap: 0em 2em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "bk-1 bk-2"
+            "bk-3 bk-4"
+            "bk-5 bk-6"
+            "bk-7 ."
+            "bk-8 bk-8";
+    }
+
+    .bk-1 {
+        grid-area: bk-1;
+    }
+
+    .bk-2 {
+        grid-area: bk-2;
+    }
+
+    .bk-3 {
+        grid-area: bk-3;
+    }
+
+    .bk-4 {
+        grid-area: bk-4;
+    }
+
+    .bk-5 {
+        grid-area: bk-5;
+    }
+
+    .bk-6 {
+        grid-area: bk-6;
+    }
+
+    .bk-7 {
+        grid-area: bk-7;
+    }
+
+    .bk-8 {
+        grid-area: bk-8;
+    }
+
+
+
+}
+
 
 .bk-1 {
     grid-area: bk-1;
@@ -88,6 +143,7 @@
 
 .bk-8 {
     grid-area: bk-8;
+    width: 100%;
 }
 
 
@@ -281,7 +337,6 @@ main {
     background-position: left;
     background-size: contain;
 
-    background-position-x: -300PX;
 }
 
 .about-graphic-2 {
@@ -295,7 +350,7 @@ main {
 }
 
 
-.page-6{
+.page-6 {
     margin-top: -5rem;
 }
 
@@ -332,6 +387,10 @@ main {
         width: 80% !important;
     }
 
+
+    .p-wrapper-4 p {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -388,6 +447,11 @@ main {
         width: 100%;
     }
 
+    .bbbb {
+        width: 200px;
+        height: 130px;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -406,6 +470,21 @@ main {
 
     .kamo-text {
         font-size: 24px;
+    }
+
+    .ff-flex {
+        padding: 2rem !important;
+    }
+
+    .bb-1 {
+        padding: 2rem !important;
+    }
+
+    
+    .bbbb {
+        position: relative;
+        width: 250px;
+        height: 130px;
     }
 
 }

@@ -1,0 +1,125 @@
+// spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
+  16: $spacer * 16,
+  17: $spacer * 17,
+  18: $spacer * 18,
+  19: $spacer * 19,
+  20: $spacer * 20,
+);
+
+a,
+button,
+li
+/* &c... */ {
+  list-style: none;
+  color: inherit !important;
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 1.5rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+) !default;
+
+// paragraph & typo
+.p-wrapper p {
+  width: 50%;
+}
+
+.p-wrapper-2 {
+  width: 50%;
+}
+
+.p-wrapper-4 p {
+  width: 50%;
+}
+
+.p-wrapper-4{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.www {
+  max-width: 1300px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "sk-modernist-bold";
+  src: url(../assets/fonts/Sk-Modernist-Bold.otf);
+}
+
+@font-face {
+  font-family: "sk-modernist-regular";
+  src: url(../assets/fonts/Sk-Modernist-Regular.otf);
+}
+
+$font-family-sans-serif: "sk-modernist-bold", -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+h1 {
+  font-family: "sk-modernist-bold" !important;
+}
+
+p {
+  font-family: "sk-modernist-regular" !important;
+  font-size: 19px;
+}
+
+small {
+  font-family: "sk-modernist-regular" !important;
+}
+
+// page-1
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content max-content;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gg-1"
+    "gg-2";
+}
+
+.gg-1 {
+  justify-self: center;
+  grid-area: gg-1;
+}
+
+.gg-2 {
+  justify-self: center;
+  grid-area: gg-2;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
