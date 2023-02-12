@@ -20,6 +20,9 @@
     <!-- Favicon (16x16) -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.png">
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- bootstrap  -->
     <link rel="stylesheet" href="./css/custom.css">
 
@@ -35,8 +38,7 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -110,11 +112,10 @@
 
             <div class="page-2">
                 <div class="page-2-wrapper www">
-
-                    <div class="f-wrapper py-5" data-scroll data-scroll-speed="1">
-                        <div
-                            class="fg-4 rounded-2 d-flex ff-flex flex-row align-items-center justify-content-center p-3 gap-3">
-                            <div class="f-1 d-flex flex-column">
+                    <div class="f-wrapper py-5">
+                        <div class="fg-4 rounded-2 d-flex ff-flex flex-row align-items-center justify-content-center p-3 gap-3 "
+                            data-scroll data-scroll-speed="1">
+                            <div class="f-1 d-flex flex-column" data-scroll data-scroll-speed="1">
                                 <img class="f-icon" src="" alt="">
                                 <h1 class="display-7">Medium Length Section</h1>
                                 <div class="p-wrapper-3">
@@ -123,7 +124,7 @@
                                     dolorum voluptas. Odio.
                                 </div>
                             </div>
-                            <div class="f-2 d-flex flex-column">
+                            <div class="f-2 d-flex flex-column" data-scroll data-scroll-speed="1.1">
                                 <img class="f-icon" src="" alt="">
                                 <h1 class="display-7">Medium Length Section</h1>
                                 <div class="p-wrapper-3">
@@ -132,7 +133,7 @@
                                     dolorum voluptas. Odio.
                                 </div>
                             </div>
-                            <div class="f-3 d-flex flex-column">
+                            <div class="f-3 d-flex flex-column" data-scroll data-scroll-speed="1.2">
                                 <img class="f-icon" src="" alt="">
                                 <h1 class="display-7">Medium Length Section</h1>
                                 <div class="p-wrapper-3">
@@ -150,14 +151,14 @@
         </div>
 
         <div class="page-2-www">
-
-            <div class="page-3 py-10">
+            <div class="page-3 py-5">
                 <div class="page-3-wrapper www">
                     <div class="about-wrapper d-flex flex-column justify-content-center align-items-center">
                         <div class="about-flex text-center">
-                            <img class="komainu img-fluid" src="./assets/images/komainu.png" alt="">
+                            <img data-scroll data-scroll-speed="1" class="komainu img-fluid"
+                                src="./assets/images/komainu.png" alt="">
                             <div class="p-wrapper-4">
-                                <p class="mb-0">
+                                <p class="mb-0" data-scroll data-scroll-speed="2">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id totam eligendi
                                     modi
                                     illum, facere voluptatum error dicta. Ducimus numquam quod aut voluptatem id earum
@@ -177,24 +178,67 @@
                 </div>
             </div>
 
+            <div class="page-4 py-10">
+                <div class="page-4-wrapper www">
+                    <div class="page-4-wrapper-wrapper">
+                        <div class="tokenomics-wrapper bg-2 rounded-4 p-2" data-scroll data-scroll-speed="1">
+                            <div class="grid-2">
+                                <div class="t-2"><img src="./assets/images/tokenomics.png" alt="" class="img-fluid"
+                                        data-scroll data-scroll-speed="3">
+                                </div>
+                                <div class="t-3">
+                                    <h1 class="display-5 kamo-text mb-0" data-scroll data-scroll-speed="1">KamoInu Tokenomics
+                                    </h1>
+                                    <div class="t-3-wrapper d-flex flex-column">
+                                        <h1 data-scroll data-scroll-speed="1" class="display-7 supply">Total Supply:
+                                            50&NonBreakingSpace;000&NonBreakingSpace;000&NonBreakingSpace;$kAI </h1>
+                                        <div data-scroll data-scroll-speed="2"
+                                            class="ttk d-flex flex-row  gapping-2 align-items-center">
+                                            <div class="ttk-box-1"></div>
+                                            <li>Development & Marketing (30%)</li>
+                                        </div>
+                                        <div data-scroll data-scroll-speed="2"
+                                            class="ttk d-flex flex-row  gapping-2 align-items-center">
+                                            <div class="ttk-box-2"></div>
+                                            <li>Team Wallets (20%)</li>
+                                        </div>
 
-            <div class="page-6 my-5 test">
+                                        <div data-scroll data-scroll-speed="2"
+                                            class="ttk d-flex flex-row  gapping-2 align-items-center">
+                                            <div class="ttk-box-3"></div>
+                                            <li>Giveaways (10%)</li>
+                                        </div>
+
+                                        <div data-scroll data-scroll-speed="2"
+                                            class="ttk d-flex flex-row gapping-2 align-items-center">
+                                            <div class="ttk-box-4"></div>
+                                            <li>Airdrop Minigame (15%) </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-6 mt-5 mb-10 test">
                 <div class="page-6-wrapper www">
                     <div class="whitepaper text-center">
                         <div class="kamo-typo d-flex flex-column align-items-center text-center">
-                            <h1>Kamowhitepaper</h1>
-                            <div class="p-wrapper-7">
+                            <h1 class="display-5" data-scroll data-scroll-speed="1">Kamowhitepaper</h1>
+                            <div class="p-wrapper-7" data-scroll data-scroll-speed="1">
                                 <p>Check out our detailed Kamowhitepaper™ <br>to learn more about Kamoinu's inner
                                     workings.
                                 </p>
                             </div>
 
-                            <div class="cta-button-3">
+                            <div class="cta-button-3" data-scroll data-scroll-speed="1">
                                 <button class="btn-1"><a href="http://" rel="noopener noreferrer">Checkout</a></button>
                             </div>
                         </div>
 
-                        <div class="kamo-img">
+                        <div class="kamo-img" data-scroll data-scroll-speed="2">
                             <img class="ktp img-fluid" src="./assets/images/ktp-1.png" alt="" srcset="">
                         </div>
 
@@ -202,28 +246,6 @@
 
                 </div>
             </div>
-
-
-
-            <!-- <div class="page-4 py-20">
-            <div class="page-4-wrapper www">
-                <div class="page-4-wrapper-wrapper">
-                    <h1>Tokenomics</h1>
-                    <div class="p-wrapper-5">
-                    </div>
-                <div class="tokenomics-wrapper bg-2 rounded-2 p-2">
-                    <div class="grid-2">
-                        <div class="t-1 p-1 rounded-1 bg-2 d-flex flex-column">
-                            <h1 class="display-7">Buy: <span>8%</span> </h1>
-                        </div>
-                        <div class="t-2 p-1 rounded-1 bg-2 d-flex flex-column">
-                            <h1 class="display-7">Sell: <span>8%</span> </h1>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div> -->
 
             <div class="page-5 fg-8 pt-2 pb-1">
                 <div class="page-5-wrapper www text-center">
@@ -237,13 +259,8 @@
                 </div>
             </div>
         </div>
-
     </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -261,23 +278,13 @@
         new ResizeObserver(() => locoScroll.update()).observe(
             document.querySelector("[data-scroll-container]")
         );
-
-
-
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            setTimeout(function () {
-                alert('Reloading Page');
-                location.reload(true);
-            }, 5000);
-        });
     </script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-    <!-- js -->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
