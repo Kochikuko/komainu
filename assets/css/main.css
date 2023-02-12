@@ -9,6 +9,120 @@
     --fg-8: #191918;
 }
 
+
+.wra-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+
+.bb-1 {
+    background: rgb(130, 206, 239, .7);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    gap: 0em 0em;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+        "bad-1 bad-1"
+        "bad-2 bad-2";
+}
+
+.bad-1 {
+    grid-area: bad-1;
+}
+
+.bad-2 {
+    grid-area: bad-2;
+}
+
+
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: .5em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "bk-1 bk-2"
+        "bk-3 bk-4"
+        "bk-5 bk-6"
+        "bk-7 bk-8";
+}
+
+.bk-1 {
+    grid-area: bk-1;
+}
+
+.bk-2 {
+    grid-area: bk-2;
+}
+
+.bk-3 {
+    grid-area: bk-3;
+}
+
+.bk-4 {
+    grid-area: bk-4;
+}
+
+.bk-5 {
+    grid-area: bk-5;
+}
+
+.bk-6 {
+    grid-area: bk-6;
+}
+
+.bk-7 {
+    grid-area: bk-7;
+}
+
+.bk-8 {
+    grid-area: bk-8;
+}
+
+
+.bbbb {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: #5e686e;
+}
+
+
+.blob-t-1 {
+    margin-top: 3rem;
+}
+
+.blob-t-2 {
+    margin-top: -10em;
+}
+
+.blob-t-3 {
+    margin-top: 12rem;
+}
+
+
+
+
 .noise::before {
     position: fixed;
     top: 0;
@@ -137,80 +251,6 @@ main {
     background-color: var(--fg-8);
 }
 
-/* tokenomics */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr;
-    gap: 1em 1em;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "t-1 t-1"
-        "t-2 t-3";
-}
-
-.t-1 {
-    grid-area: t-1;
-}
-
-.t-2 {
-    grid-area: t-2;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.t-3 {
-    align-self: center;
-    grid-area: t-3;
-}
-
-
-.t-3-wrapper li {
-    font-size: 19px;
-}
-
-.gapping-2 {
-    gap: 12px;
-}
-
-.ttk-box-1 {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    background-color: #886BD8;
-}
-
-
-.ttk-box-2 {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    background-color: #5E3FBE;
-}
-
-.ttk-box-3 {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    background-color: #F4F0FD;
-}
-
-
-.ttk-box-4 {
-    width: 10px;
-    border-radius: 2px;
-    height: 10px;
-    background-color: #A88DEB;
-}
-
-.ttk-box-5 {
-    width: 10px;
-    border-radius: 2px;
-    height: 10px;
-    background-color: #CBB6F8;
-}
-
 
 
 
@@ -231,10 +271,33 @@ main {
 
 
 
+.f-icon {
+    font-size: 4rem;
+}
+
+.about-graphic {
+    background-image: url('../images/g2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    background-position-x: -300PX;
+}
+
+.about-graphic-2 {
+    background-image: url('../images/g2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-position-y: right;
+
+    background-position-x: 1600PX;
+}
 
 
-
-
+.page-6{
+    margin-top: -5rem;
+}
 
 
 
@@ -309,9 +372,7 @@ main {
         font-size: 16px;
     }
 
-    .tokenomics-wrapper {
-        padding: 2rem 1rem !important;
-    }
+
 
 }
 
@@ -339,16 +400,11 @@ main {
         padding: 2rem 1rem !important;
     }
 
-    .ttk li {
-        font-size: 14px;
-    }
-
-
     .grid-2 {
         text-align: start !important;
     }
 
-    .kamo-text{
+    .kamo-text {
         font-size: 24px;
     }
 
