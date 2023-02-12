@@ -237,8 +237,6 @@ main {
 }
 
 .btn-2 {
-    transition: opacity 1s ease 0s;
-    opacity: .7;
     color: var(--fg-7);
     font-size: 20px;
     padding: 5px 30px;
@@ -248,12 +246,15 @@ main {
 }
 
 .btn-2:hover {
-    opacity: 1;
+    transition: background .3s ease-in-out;
+    background-color: rgb(130, 206, 239);
+}
+
+.page-8 {
+    scroll-margin-bottom: 1000px !important;
 }
 
 .btn-1 {
-    opacity: 1;
-    transition: opacity 1s ease 0s;
     color: var(--fg-7);
     font-size: 20px;
     padding: 5px 30px;
@@ -263,7 +264,8 @@ main {
 }
 
 .btn-1:hover {
-    opacity: .7;
+    transition: background .3s ease-in-out;
+    background-color: transparent;
 }
 
 
@@ -344,9 +346,6 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    background-position-y: right;
-
-    background-position-x: 1600PX;
 }
 
 
@@ -480,7 +479,7 @@ main {
         padding: 2rem !important;
     }
 
-    
+
     .bbbb {
         position: relative;
         width: 250px;
