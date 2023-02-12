@@ -1,8 +1,8 @@
 :root {
     --fg-1: #112024;
-    --fg-2: #4898b7;
+    --fg-2: rgb(130, 206, 239, .7);
     --fg-3: #d8ddeb;
-    --fg-4: #3d7d95;
+    --fg-4: rgb(130, 206, 239, .7);
     --fg-5: #5e686e;
     --fg-6: #f4f4f4;
     --fg-7: #1e1e1e;
@@ -23,19 +23,39 @@
     background: url(../images/noise.gif);
 }
 
-main {
-    color: var(--fg-6);
+main{
+    color: #f4f4f4;
+    background-image: url('../images/idk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
+
+/* .page-1-www{
+    background-image: url('../images/element.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.page-2-www{
+    background-image: url('../images/element-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+} */
 
 .cb-2 {
     gap: 5px 10px;
 }
 
+
 .fc {
-    background-color: #4898b7;
+    background-color: #82CEEF;
     padding: 1rem;
     border-radius: 100%;
-
 }
 
 .padding-1 {
@@ -48,17 +68,17 @@ main {
 
 .btn-2 {
     transition: opacity 1s ease 0s;
-    opacity: 1;
+    opacity: .7;
     color: var(--fg-7);
     font-size: 20px;
     padding: 5px 30px;
     border-radius: 5px;
-    border: 2px solid #4898b7;
+    border: 2px solid rgb(130, 206, 239, .7);
     background-color: transparent;
 }
 
 .btn-2:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .btn-1 {
@@ -68,12 +88,21 @@ main {
     font-size: 20px;
     padding: 5px 30px;
     border-radius: 5px;
-    border: 2px solid #4898b7;
-    background-color: var(--fg-2);
+    border: 2px solid rgb(130, 206, 239, .7);
+    background-color: rgb(130, 206, 239);
 }
 
 .btn-1:hover {
-    opacity: 0.6;
+    opacity: .7;
+}
+
+
+.bg-1 {
+    background-color: rgb(130, 206, 239, .7);
+}
+
+.bg-2 {
+    background-color: rgb(130, 206, 239, .7);
 }
 
 
@@ -91,7 +120,7 @@ main {
 }
 
 .fg-4 {
-    background-color: var(--fg-4);
+    background-color: rgb(130, 206, 239, .7);
 }
 
 .fg-5 {
@@ -111,19 +140,45 @@ main {
 }
 
 /* tokenomics */
-.grid-2 {  display: grid;
+.grid-2 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1em 1em;
+    gap: 1em 2em;
     grid-auto-flow: row;
+    justify-content: center;
+    justify-items: stretch;
     align-items: center;
     grid-template-areas:
-      "t-1 t-2";
-  }
-  
-  .t-1 { grid-area: t-1; }
-  
-  .t-2 { grid-area: t-2; }
+        "t-1 t-2";
+}
+
+.t-1 {
+    grid-area: t-1;
+}
+
+.t-2 {
+    grid-area: t-2;
+}
+
+
+
+
+/* design */
+
+.b-1 {
+    position: absolute;
+
+    display: flex;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    justify-self: center;
+    z-index: 100;
+    justify-items: center;
+    justify-content: center;
+}
+
 
 
 
