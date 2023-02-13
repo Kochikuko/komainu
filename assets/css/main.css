@@ -430,7 +430,13 @@ main {
         font-size: 16px;
     }
 
+    .bad-2{
+        height: 60vh;
+    }
 
+    .grid-3{
+        gap: 8rem 0;
+    }
 
 }
 
@@ -486,12 +492,19 @@ main {
         height: 130px;
     }
 
+    .grid-5 {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
     .p-wrapper-4 p {
         width: 100%;
     }
+
+ 
 }
 
 @media only screen and (max-width: 990px) {
