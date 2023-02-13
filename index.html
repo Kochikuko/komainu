@@ -281,9 +281,20 @@
     "></script>
     <script>
         const locoScroll = new LocomotiveScroll({
-            el: document.querySelector(".smooth-scroll"),
+            el: scroller,
             smooth: true,
-            smoothMobile: true
+            smartphone: {
+                breakpoint: 0,
+                smooth: true,
+                lerp: 0.8,
+                getSpeed: true,
+            },
+            tablet: {
+                breakpoint: 0,
+                smooth: true,
+                lerp: 0.8,
+                getSpeed: true,
+            },
         });
 
         new ResizeObserver(() => locoScroll.update()).observe(
