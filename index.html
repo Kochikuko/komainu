@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-smooth-scroll-compatible is-loading" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -280,13 +280,11 @@
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
     "></script>
     <script>
-        let locoScroll;
-        locoScroll = new LocomotiveScroll({
+        const locoScroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
-            tablet: {
-                breakpoint: 0,    // <---- Fixes The Issue 🎉
-            }
+            smoothMobile: true,
+            smoothTablet: true,
         });
 
         new ResizeObserver(() => locoScroll.update()).observe(
