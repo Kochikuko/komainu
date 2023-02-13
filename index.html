@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 
     <!-- *Tags -->
     <!-- Primary Meta Tags -->
@@ -27,8 +27,7 @@
                                         betting platform that allows users to earn decentralized assets through
                                         responsible gambling. It is a chance to experience the latest technology in
                                         crypto and bring its benefits to a wider audience.">
-    <meta property="og:image"
-        content="https://github.com/Kochikuko/komainu/blob/main/cover.png?raw=true">
+    <meta property="og:image" content="https://github.com/Kochikuko/komainu/blob/main/cover.png?raw=true">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -38,8 +37,7 @@
                                         betting platform that allows users to earn decentralized assets through
                                         responsible gambling. It is a chance to experience the latest technology in
                                         crypto and bring its benefits to a wider audience.">
-    <meta property="twitter:image"
-        content="https://github.com/Kochikuko/komainu/blob/main/cover.png?raw=true">
+    <meta property="twitter:image" content="https://github.com/Kochikuko/komainu/blob/main/cover.png?raw=true">
 
     <!-- need meta.io -->
 
@@ -309,8 +307,12 @@
         const locoScroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
-            smoothMobile: true,
-            smoothTablet: true,
+            mobile: {
+                smooth: true
+            },
+            tablet: {
+                smooth: true
+            }
         });
 
         new ResizeObserver(() => locoScroll.update()).observe(
