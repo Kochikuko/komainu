@@ -62,9 +62,10 @@
                             <div class="d-flex align-items-center flex-row gap-2 menu" data-aos="fade-up"
                                 data-aos-delay="200">
                                 <nav class="d-flex flex-row gap-1" data-aos="fade-up" data-aos-delay="300">
-                                    <li data-aos="fade-up" data-aos-delay="350"><a href="#socials" data-scroll-to="#socials"
-                                            rel="noopener noreferrer">Socials</a></li>
-                                    <li data-aos="fade-up" data-aos-delay="400"><a href="#tokenomics" data-scroll-to="#tokenomics" target="_blank"
+                                    <li data-aos="fade-up" data-aos-delay="350"><a href="#socials"
+                                            data-scroll-to="#socials" rel="noopener noreferrer">Socials</a></li>
+                                    <li data-aos="fade-up" data-aos-delay="400"><a href="#tokenomics"
+                                            data-scroll-to="#tokenomics" target="_blank"
                                             rel="noopener noreferrer">Tokenomics</a></li>
                                 </nav>
 
@@ -151,7 +152,7 @@
             </div>
         </div>
 
-        <div class="page-2-www ">
+        <div class="page-2-www">
             <div class="page-3 py-5">
                 <div class="page-3-wrapper www about-graphic">
                     <div class="about-wrapper d-flex flex-column justify-content-center align-items-center">
@@ -279,10 +280,10 @@
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
     "></script>
     <script>
-        let locoScroll;
-        locoScroll = new LocomotiveScroll({
-            el: document.querySelector("[data-scroll-container]"),
-            smooth: true, smoothMobile: true
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector(".smooth-scroll"),
+            smooth: true,
+            smoothMobile: true
         });
 
         new ResizeObserver(() => locoScroll.update()).observe(
